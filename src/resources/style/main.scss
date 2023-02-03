@@ -1,0 +1,11 @@
+@import './fonts';
+@import './variables';
+
+body {
+    background: url('../img/bg.gif') center (center / cover) no-repeat;
+    height: 250vh;
+/*     max-height: 108rem;
+    min-height: 60rem; */
+    /* overflow: hidden; */
+    position: relative;
+}

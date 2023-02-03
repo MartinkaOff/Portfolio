@@ -1,0 +1,61 @@
+.hello {
+    padding-top: 1em;
+    padding-left: 2em;
+    position: relative;
+    width: 100%;
+    height: 14em;
+    border: 1px solid var(--main-color);
+    background: rgba($color: #38224d, $alpha: 0.9);
+    &__info {
+        margin-left: 5em;
+        font-size: 10px;
+        font-family: Pixeled;
+        font-style: normal;
+        font-weight: 600;
+        color: var(--main-color);
+        span {
+            padding-top: 20px;
+            font-family: uaBRAND;
+            font-style: normal;
+            font-weight: 400;
+            color: var(--white-color);
+            font-size: 30px;
+        }
+        &-gray {
+            color: var(--main-color);
+            font-family: uaBRAND;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+        }
+        &-descr {
+            margin-top: 1em;
+            padding-left: 20px;
+            width: 72%;
+            position: relative;
+            margin-left: 20px;
+            color: var(--second-color);
+            font-family: uaBRAND;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+
+            a {
+                color: #b87eef;
+                &:focus {
+                    color: red;
+                }
+            }
+
+            &:before {
+                background-color: #b87eef;
+                content: "";
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 0.1rem;
+            }
+        }
+    }
+}
