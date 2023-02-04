@@ -1,8 +1,9 @@
 .skills {
+    transition: all 1s;
     padding-left: 2em;
     position: relative;
     width: 100%;
-    height: 30em;
+    height: 50em;
     border: 1px solid var(--main-color);
     border-top: none;
     background: rgba($color: #38224d, $alpha: 0.9);
@@ -18,7 +19,7 @@
             font-size: 20px;
         }
         &:before {
-            background-color: #b87eef;
+            background-color: var(--main-color);
             content: "";
             height: 15%;
             left: 4em;
@@ -28,22 +29,156 @@
             transform: rotate(90deg);
         }
     }
-    &__html {
-        color: var(--main-color);
-        text-decoration: underline;
+
+    &__item {
+        height: 10%;
+        /* margin-top: 3em; */
+        overflow: hidden;
+        width: 61em;
+        border-bottom: 1px solid;
+        border-color: rgba($color: #b87eef, $alpha: 0.4);
         cursor: pointer;
+        &-icon {
+            width: 39px;
+        }
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-html {
+            max-height: 22%;
+        }
+        &-js, &-different {
+            max-height: 30%;
+        }
+    }
+
+    &__name {
+        margin-left: 10px;
+        font-size: 20px;
+        font-family: uaBRAND;
+        color: var(--main-color);
+        cursor: pointer;
+        padding-bottom: 0em;
+        user-select: none;
         &-item {
-            display: none;
+            margin-bottom: -3em;
+            font-size: 17px;
+            font-family: uaBRAND;
+            margin-left: 2em;
+            margin-top: 1em;
+            position: relative;
+            display: block;
             color: var(--second-color);
             text-decoration: none;
+            &:before {
+                background-color: var(--main-color);
+                content: "";
+                height: 4%;
+                left: -40px;
+                position: absolute;
+                top: 21px;
+                width: 3em;
+                transform: rotate(90deg);
+            }
+            &-css {
+                &:before {
+                    height: 1.5%;
+                    left: -92px;
+                    top: 73px;
+                    width: 9em;
+                }
+            }
+            &-js, &-different {
+                &:before {
+                    height: 1.5%;
+                    left: -69px;
+                    top: 50px;
+                    width: 7em;
+                }
+            }
+        }
+        &-subitem {
+            margin-left: 1em;
+            margin-top: 10px;
+            span {
+                font-size: 19px;
+                color: var(--white-color);
+            }
         }
     }
 }
 
+.plus {
+    transform: rotate(0deg);
+    cursor: pointer;
+    top: 3em;
+    left: 33em;
+    /* position: absolute; */
+    font-size: 30px;
+    font-family: Pixeled;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.active {
+    animation-name: plusActive;
+    animation-duration: 1s;
+    transform: rotate(-45deg);
+}
+
+.inActive {
+    animation-name: plusInActive;
+    animation-duration: 0.5s;
+    transform: rotate(0deg);
+}
+
 .down {
-    display: block;
+    animation-name: down;
+    animation-duration: 1s;
+    height: 36%;
 }
 
 .up {
-    display: none;
+    animation-name: up;
+    animation-duration: 0.5s;
+    height: 10%;
+}
+
+
+@keyframes plusActive {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes plusInActive {
+    from {
+        transform: rotate(-45deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes down {
+    from {
+        height: 10%;
+    }
+    to {
+        height: 36%;
+    }
+}
+
+@keyframes up {
+    from {
+        height: 36%;
+    }
+    to {
+        height: 10%;
+    }
 }
