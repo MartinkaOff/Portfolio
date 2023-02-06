@@ -3,3 +3,16 @@
     --white-color: #e0e0f8;
     --second-color: #b9b2b2;
 }
+
+.header {
+    margin-left: 5em;
+    font-size: 25px;
+    font-family: Pixeled;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--white-color);
+    span {
+        color: var(--main-color);
+        font-size: 20px;
+    }
+}

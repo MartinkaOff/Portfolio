@@ -33,7 +33,7 @@ const Skills = () => {
 
     return (
         <div className="skills">
-            <div className="skills__header"><span>0.2</span> МОИ НАВЫКИ </div>
+            <div className=" header skills__header"><span>0.2.</span> МОИ НАВЫКИ </div>
 
         {/* HTML */}
 

@@ -3,10 +3,12 @@
     padding-left: 2em;
     position: relative;
     width: 100%;
-    height: 50em;
+    height: 100%;
     border: 1px solid var(--main-color);
     border-top: none;
     background: rgba($color: #38224d, $alpha: 0.9);
+    border-bottom: none;
+    padding-top: 1em;
     &__header {
         margin-left: 5em;
         font-size: 25px;
@@ -18,20 +20,11 @@
             color: var(--main-color);
             font-size: 20px;
         }
-        &:before {
-            background-color: var(--main-color);
-            content: "";
-            height: 15%;
-            left: 4em;
-            position: absolute;
-            top: 8px;
-            width: 0.1rem;
-            transform: rotate(90deg);
-        }
     }
 
     &__item {
-        height: 10%;
+        padding-bottom: 0.5em;
+        height: 70px;
         /* margin-top: 3em; */
         overflow: hidden;
         width: 61em;
@@ -46,13 +39,12 @@
             justify-content: space-between;
         }
         &-html {
-            max-height: 22%;
+            max-height: 175px;
         }
         &-js, &-different {
-            max-height: 30%;
+            max-height: 230px;
         }
     }
-
     &__name {
         margin-left: 10px;
         font-size: 20px;
@@ -137,13 +129,13 @@
 .down {
     animation-name: down;
     animation-duration: 1s;
-    height: 36%;
+    height: 275px;
 }
 
 .up {
     animation-name: up;
     animation-duration: 0.5s;
-    height: 10%;
+    height: 70px;
 }
 
 
@@ -167,18 +159,18 @@
 
 @keyframes down {
     from {
-        height: 10%;
+        height: 70px;
     }
     to {
-        height: 36%;
+        height: 275px;
     }
 }
 
 @keyframes up {
     from {
-        height: 36%;
+        height: 275px;
     }
     to {
-        height: 10%;
+        height: 70px;
     }
 }

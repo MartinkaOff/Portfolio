@@ -3,7 +3,7 @@ import './about.scss';
 const About = () => {
     return (
         <div className="about">
-            <div className="about__header"><span>0.1</span> ОБО МНЕ</div>
+            <div className=" header about__header"><span>0.1.</span> ОБО МНЕ</div>
             <div className="about__info">
                 Я начал увлекаться разработкой летом 2022 года, тогда я смотрел множество ютуб-роликов про разработку, и начал учиться по курсам и пытался создавать свои сайты.
                 <br /><br />

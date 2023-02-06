@@ -4,7 +4,7 @@
     padding-left: 2em;
     position: relative;
     width: 100%;
-    height: 30em;
+    height: 100%;
     border: 1px solid var(--main-color);
     border-bottom: none;
     background: rgba($color: #38224d, $alpha: 0.9);
@@ -18,16 +18,6 @@
         span {
             color: var(--main-color);
             font-size: 20px;
-        }
-        &:before {
-            background-color: #b87eef;
-            content: "";
-            height: 15%;
-            left: 4em;
-            position: absolute;
-            top: 21px;
-            width: 0.1rem;
-            transform: rotate(90deg);
         }
     }
     &__info {
